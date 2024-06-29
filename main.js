@@ -1,5 +1,6 @@
-const apiUrl = 'http://localhost:3000'
-const webSocketUrl = 'ws://localhost:3000/cable'
+const apiUrl = import.meta.env.VITE_RAILS_API_URL;
+const webSocketUrl = import.meta.env.VITE_RAILS_CABLE_URL;
+
 const chatRoomListDiv = document.getElementById('chat-rooms-list');
 const newMessageForm = document.getElementById('new-message-form');
 const messagesListDiv = document.getElementById('messages-list');
